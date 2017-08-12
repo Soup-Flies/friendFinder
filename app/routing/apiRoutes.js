@@ -2,6 +2,13 @@ const path = require('path');
 
 const friendTest = function(req, res) {
   console.log(req.body);
+  // let temp = req.body
+  // temp.map(function(i) {
+
+  // })
+  // console.log(temp);
+
+  res.redirect("/");
 }
 
 module.exports = app => {
