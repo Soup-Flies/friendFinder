@@ -20,114 +20,92 @@
   <div id="title">
     <h1>Friend Finder</h1>
   </div>
-  <div id="main">
-    <ul>
-      <li>
+  <form action="/api/friends" method="POST">
         <p>Question 01</p>
         <p>Most would describe me as charming and nonchalant -- I can turn my charm on and off like a faucet.</p>
-        <select id="Q1">
+        <select name="Q1">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 02</p>
         <p>I do what I want, when I want, the moment the impulse strikes me, regardless of what others want.</p>
-        <select id="Q2">
+        <select name="Q2">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 03</p>
         <p>If something goes wrong or turns out badly, it's not my fault.</p>
-        <select id="Q3">
+        <select name="Q3">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 04</p>
         <p>I've gotten into legal or criminal trouble as an adult (not just a speeding or parking ticket).</p>
-        <select id="Q4">
+        <select name="Q4">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 05</p>
         <p>I am easily the best at what I do, bar none -- nobody could ever take my place.</p>
-        <select id="Q5">
+        <select name="Q5">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 06</p>
         <p>I do whatever I feel like doing, and I don't care what others think -- or even if it's illegal.</p>
-        <select id="Q6">
+        <select name="Q6">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 07</p>
         <p>Every person for themselves; I don't see the point in feeling sorry for other people and have no desire to help others.</p>
-        <select id="Q7">
+        <select name="Q7">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 08</p>
         <p>I've gotten into legal or criminal trouble when I was a teenager (not just a speeding or parking ticket).</p>
-        <select id="Q8">
+        <select name="Q8">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 09</p>
         <p>I have no problem or concern in lying in order to get what I want.</p>
-        <select id="Q9">
+        <select name="Q9">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-      <li>
         <p>Question 10</p>
         <p>"Live in the moment" is what I say; the future will take care of itself and learning from your past is pointless.</p>
-        <select id="Q10">
+        <select name="Q10">
           <option value="1"> Strongly Disagree </option>
           <option value="2"> Disagree </option>
-          <option value="3"> Neutral </option>
+          <option value="3" selected="selected"> Neutral </option>
           <option value="4"> Agree </option>
           <option value="5"> Strongly Agree </option></select>
-      </li>
-    </ul>
-    <button class="btn btn-default"><a id="submit" href="#">Submit</a></button>
-  </div>
+      <button class="btn btn-default" type="submit">Submit</button>
+  </form>
   <div id="foot">
     <button class="btn btn-default"><a href="/">Go Home</a></button>
   </div>
+  <script src="./survey.js">
 </body>
-<script src="./survey.js">
 </html>
