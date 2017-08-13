@@ -1,12 +1,15 @@
 const path = require('path');
+const fs = require('fs');
 
 const friendTest = function(req, res) {
-  console.log(req.body);
-  // let temp = req.body
-  // temp.map(function(i) {
-
-  // })
-  // console.log(temp);
+  let friendPath = path.join(__dirname, "/../data/friends.js");
+  fs.readFile(friendPath, (err, data) => {
+    if (err) throw err;
+    let temp = JSON.parse(data);
+    console.log(temp);
+    temp.push(req.body);
+    fs.writeFile(friendPath, JSON.stringify(temp), () => console.log("New User added"));
+  });
 
   res.redirect("/");
 }
